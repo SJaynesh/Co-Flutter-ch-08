@@ -75,7 +75,33 @@
 
 
 
+<br><br>
 
+
+## Types of Widgets (StatelessWidget & StatefulWidget):
+
+<br>
+
+### `StatelessWidget :`
+
+<br>
+
+> * `Perform changes on screen only while hotreload.`
+> * This is a kind of widget which is static and only created once in a memory
+> * Using this widget we cannot update an UI.
+> * Since this widget did not created in memory frequently, this supplies rapid performance as compared to StatefulWidget.
+> * This widget contains only one lifecycle method, build() method.
+
+
+### Syntax:
+
+<pre>
+  class [my_App] extends StatelessWidget {
+    const [my_App]({Key?key}) : super(key?key);
+
+    @overridi
+  }
+</pre>
 
 
 
