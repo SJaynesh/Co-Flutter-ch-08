@@ -97,9 +97,9 @@
 ### Syntax:
 
 <pre>
-  class [my_App] extends StatelessWideget 
+  class [MyApp] extends StatelessWideget 
   {
-    const [my_App]({Key?key}):super(key:key);
+    const [MyApp]({Key?key}):super(key:key);
 
     @override
     Widget build(BuildContext context) {
