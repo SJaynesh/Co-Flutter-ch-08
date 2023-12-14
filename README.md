@@ -92,19 +92,144 @@
 > * Since this widget did not created in memory frequently, this supplies rapid performance as compared to StatefulWidget.
 > * This widget contains only one lifecycle method, build() method.
 
+<br><br>
 
 ### Syntax:
 
 <pre>
-  class [my_App] extends StatelessWidget {
-    const [my_App]({Key?key}) : super(key?key);
+  class [my_App] extends StatelessWideget 
+  {
+    const [my_App]({Key?key}):super(key:key);
 
-    @overridi
+    @override
+    Widget build(BuildContext context) {
+      return UIPage();
+    }
+  }
+</pre>
+
+<br>
+
+> 1. `extends: ` inherite StatelessWidget
+> 2. `super: ` Parent class Constructor
+
+
+### Reload:
+> * Only for build method is called in reload.
+
+<br>
+
+### Refresh(RUN):
+> * Run the entire code from the references.
+
+
+<br><br>
+
+## `StatefullWidget:`
+
+<br>
+
+> * `Performs changes on screen every time using setState((){}); function.`
+> * This is a kind of widget which is dynamic and placed inside a memory (RAM).
+> * Using this widget we can update an UI using its lifecycle method setState().
+> * Since this widget did created in memory frequently, this supplies slow performance as compared to StatelesWidget.
+
+<br>
+
+> * This widget contains 5 lifecycle methods, such as
+> * `createState();`
+> * `initState();`
+> * `build();`
+> * `setState();`
+> * `dispose();`
+
+
+<br>
+
+### Syntax:
+
+<pre>
+  class [MyApp] extends StatefullWidget
+  {
+      const [MyApp]({Key?key}) : supeer(key?key);
+
+      State<[MyApp]> createState() => _[MyApp]State();
+  
+  }
+
+  class _[MyApp]State extends State<[MyApp]>
+  {
+
+    @override
+    initState() {
+      super.initState();
+    }
+
+    @override
+    Widget build(BuildContext context)
+    {
+      return UIPage();
+    }
   }
 </pre>
 
 
+<br><br>
 
+## Lifecycle of Statefullwidget
+
+<br>
+
+### 1. createState()
+
+<br>
+
+> * This method is responsible to provide UI page to main function.
+> * It executes when we start the application.
+
+
+<br>
+
+### 2. initState()
+
+<br>
+
+> * This method is executed after createState() and before build method.
+> * It will be again called or execute when we redirect to the page again.
+> * This method is mainly responsible to reassigned over variables.
+
+<br>
+
+### 3. Build()
+
+<br>
+
+> * This method is called after initState.
+> * This method contains over UI page which we want to change frequently.
+> * can be re-invoked by reloading the UI using hot-reload or setState()
+> * contains BuildContext of the UI
+
+
+<br>
+
+### 4. setState()
+
+<br>
+
+> * All the changes of UI can be applied using setState();
+> * can be used number of times to reload the ui.
+> * every expression which is updating the data must be written in setState()
+
+
+<br>
+
+### 5. dispose()
+
+<br>
+
+> * This method is responsible to clear memory space of variables or objects from RAM.
+> * similar as destructor, it is responsible to dispose(free-up/destroy) all the variable or controllers which means to be erased while leaving the page or app.
+> * This method is called at the end of current page.
 
 
 
