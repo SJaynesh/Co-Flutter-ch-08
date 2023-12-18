@@ -39,6 +39,7 @@
             alignment: Alignment(0, 0),
             child: Text("Hello Flutter"),
           ),
+  
 
   // Center Left
    body: const Align(
@@ -46,37 +47,228 @@
             child: Text("Hello Flutter"),
           ),
 
+  
   // Center Right
   body: const Align(
             alignment: Alignment(1, 0),
             child: Text("Hello Flutter"),
           ),
 
+  
   // Top Center
    body: const Align(
             alignment: Alignment(0, -1),
             child: Text("Hello Flutter"),
           ),
 
+  
   // Top Left
    body: const Align(
             alignment: Alignment(-1, -1),
             child: Text("Hello Flutter"),
           ),
 
+  
   // Top Right
   body: const Align(
             alignment: Alignment(1, -1),
             child: Text("Hello Flutter"),
           ),
+
   
+  // Bottom Center
+  body: const Align(
+          alignment: Alignment(0, 1),
+          child: Text("Hello Flutter"),
+        ),
+
+  // Bottom Left
+   body: const Align(
+          alignment: Alignment(-1, 1),
+          child: Text("Hello Flutter"),
+        ),
+
+
+  // Bottom Rigth
+   body: const Align(
+          alignment: Alignment(1, 1),
+          child: Text("Hello Flutter"),
+        ),
 </pre>
-
-
-
 
 <br><br>
 
+## Container Widget: 
+
+<br>
+
+<pre>
+  body: Align(
+          child: Container(
+            height: 180,
+            width: 180,
+            color: Colors.blue.shade400,
+          ),
+        ),
+</pre>
+
+<br><br>
+
+### Nasted Container:
+
+<br>
+
+<pre>
+  body: Align(
+          child: Container(
+            height: 180,
+            width: 180,
+            color: Colors.blue.shade400,
+            alignment: Alignment.center,
+            child: Container(
+              height: 150,
+              width: 150,
+              color: Colors.blue.shade200,
+              alignment: Alignment.center,
+              child: Container(
+                height: 100,
+                width: 100,
+                color: Colors.white,
+                alignment: Alignment.center,
+                child: Text("Hello Flutter"),
+              ),
+            ),
+          ),
+        ),
+</pre>
+
+<br>
+
+## BoxDecoration class:
+
+<br>
+
+### `Border:`
+
+<br>
+
+ #### Border.all
+
+ <br>
+
+ <pre>
+   body: Align(
+          child: Container(
+            height: 180,
+            width: 180,
+            decoration: BoxDecoration(
+              color: Colors.blue.shade400,
+              border: Border.all(
+                color: Colors.purpleAccent,
+                width: 5,
+              ),
+            ),
+            alignment: Alignment.center,
+            child: const Text("Hello Flutter"),
+          ),
+        ),
+ </pre>
+
+ <br>
+
+ #### Border
+
+<br>
+
+<pre>
+  body: Align(
+          child: Container(
+            height: 180,
+            width: 180,
+            decoration: BoxDecoration(
+              color: Colors.blue.shade400,
+              border: Border(
+                top: BorderSide(
+                  color: Colors.yellowAccent,
+                  width: 10,
+                ),
+                bottom: BorderSide(
+                  color: Colors.red,
+                  width: 10,
+                ),
+                left: BorderSide(
+                  color: Colors.orangeAccent,
+                  width: 10,
+                ),
+                right: BorderSide(
+                  color: Colors.cyanAccent,
+                  width: 10,
+                ),
+              ),
+            ),
+            alignment: Alignment.center,
+            child: const Text("Hello Flutter"),
+          ),
+        ),
+</pre>
+
+<br>
+
+#### Border.symmetric
+
+<br>
+
+<pre>
+  body: Align(
+          child: Container(
+            height: 180,
+            width: 180,
+            decoration: BoxDecoration(
+              color: Colors.blue.shade400,
+              border: Border.symmetric(
+                vertical: BorderSide(
+                  color: Colors.indigo,
+                  width: 30,
+                ),
+                horizontal: BorderSide(
+                  color: Colors.redAccent,
+                  width: 30,
+                ),
+              ),
+            ),
+            alignment: Alignment.center,
+            child: const Text("Hello Flutter"),
+          ),
+        ),
+</pre>
+
+<br>
+
+<pre>
+  body: Align(
+          child: Container(
+            height: 180,
+            width: 180,
+            decoration: BoxDecoration(
+              color: Colors.blue.shade400,
+              border: Border.symmetric(
+                vertical: BorderSide(
+                  color: Colors.yellow,
+                  width: 105,
+                ),
+                horizontal: BorderSide(
+                  color: Colors.pink,
+                  width: 105,
+                ),
+              ),
+            ),
+            alignment: Alignment.center,
+            child: const Text("Hello Flutter"),
+          ),
+        ),
+</pre>
+
+<br><br>
 
 ## Types of Widgets (StatelessWidget & StatefulWidget):
 
