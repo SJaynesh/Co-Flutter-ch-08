@@ -425,3 +425,89 @@
 
 
 
+<br><br><br><br><br>
+
+## `Routing :`
+
+<br>
+
+> * In any mobile app, navigating to different pages defines the workflow of the application, and the way to handle the navigation is known as routing.
+> * Routes are used to navigate from one page to another.
+> * Flutter provides a basic routing class MaterialPageRoute and two methods Navigator. push() and Navigator. pop()
+
+
+<br><br>
+
+<p><img src = "https://github.com/SJaynesh/Co-Flutter-ch-08/assets/115562979/4a4822c6-e255-46b3-bc6a-5f5eda0b5285.png" width=80% height=100%></p>
+
+<br><br>
+
+## `Types of Routing :`
+
+<br>
+
+> 1. Default Routing
+> 2. Named Routing
+> 3. onGenerateRouting
+
+<br><br>
+
+## 1. Default Routing :
+
+<br>
+
+> * Use the Navigator class to navigate from one page to another.
+
+<br>
+
+### Navigator class provide the Three methods:
+
+<br>
+
+> 1. Push
+> 2. Pop
+> 3. PushAndRemoveUntil
+
+<br>
+
+#### Push : 
+
+<br>
+
+> * To switch to a new route, use the Navigator.push() method.
+
+<br>
+
+<p><img src = "https://github.com/SJaynesh/Co-Flutter-ch-08/assets/115562979/5bcccaea-4e05-4a90-98de-925a182739d1.png" width=100% height=80%></p>
+
+<br>
+
+#### Pop :
+
+<br>
+
+> * Navigator.pop() method. The pop() method removes the current Route from the stack of routes managed by the Navigator.
+
+<p><img src = "https://github.com/SJaynesh/Co-Flutter-ch-08/assets/115562979/34d9a3c0-640a-429a-a8b8-6b3e45466e47.png" width=100% height=80%></p>
+
+<br>
+
+#### PushAndRemoveUntil :
+
+<br>
+
+> * Navigator.pushAndRemoveUntil removes all the routes despite conditions.
+
+<br>
+
+<p><img src = "https://github.com/SJaynesh/Co-Flutter-ch-08/assets/115562979/d3e980d3-91a0-4d8e-b90f-37aa72433e96.png" width=100% height=80%></p>
+
+<br>
+
+
+
+
+
+
+
+
